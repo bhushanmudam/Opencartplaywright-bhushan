@@ -36,6 +36,7 @@ test('User login test @master @sanity @regression',async()=>{
      await homePage.clickLogin();
 
      //Enter valid credentials and log in
+    
     await loginPage.Login(config.email,config.password);
 
     

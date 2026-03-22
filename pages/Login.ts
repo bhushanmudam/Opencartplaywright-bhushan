@@ -1,4 +1,4 @@
-import {Locator,Page} from '@playwright/test';
+import {Locator,Page,expect} from '@playwright/test';
 
 export class Login{
 
@@ -20,6 +20,8 @@ export class Login{
     }
 
     async setEmail(email:string){
+        await this.page.waitForLoadState('networkidle');
+        await expect(this.enterEmail).toBeVisible();
         await this.enterEmail.fill(email);
     }
 
