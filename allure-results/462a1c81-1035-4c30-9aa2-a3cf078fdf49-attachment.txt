@@ -1,0 +1,28 @@
+Exception occured while clicking 'Login':Error: locator.click: Test ended.
+Call log:
+  - waiting for locator('a[href="http://localhost/opencart/upload/index.php?route=account/login"]')
+    - locator resolved to <a href="http://localhost/opencart/upload/index.php?route=account/login">Login</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    27 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+Exception occured while clicking 'My account':Error: locator.click: Test ended.
+Call log:
+  - waiting for locator('a[title="My Account"]')
+    - locator resolved to <a title="My Account" data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/opencart/upload/index.php?route=account/account">…</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+
